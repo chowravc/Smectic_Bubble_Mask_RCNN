@@ -1,0 +1,52 @@
+#Mask Template:
+
+submasks:
+    ext: 'tiff'
+
+    maskChoices: 25
+
+    rgbOutput: False
+
+    gauss:
+        use: False
+        params:
+            min: 0.1 #units of sigma
+            max: 1.0
+
+    smartNoise:
+        use: True
+        params:
+            min: 30
+            max: 60
+
+    sineNoise:
+        use: True
+        params:
+            min: 0
+            max: 10
+
+    gradientNoise:
+        use: True
+        params:
+            min: 0
+            max: 60
+
+    gridNoise:
+        use: True
+        params:
+            min: 0
+            max: 50
+
+    bloomNoise:
+        use: False
+        params:
+            radius: 110
+            min: 50
+            max: 70
+
+    normalize:
+        use: True
+        params:
+            min: 110
+            max: 180
+            mean: 64
